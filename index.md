@@ -63,9 +63,10 @@ Our engagement structure is designed to safeguard transaction confidentiality wh
 
 For qualified inquiries, project summaries, or to initiate a secure transaction framework, please contact our principal desk:
 
-*   **Principal Partner:** Monthon Mahakijdumrongnukul
-*   **Mobile / WhatsApp:** +6680-657-8387
-*   **Official Email:** joecollection.m@gmail.com
+
+*   **Monthon Mahakijdumrongnukul**
+*   **Mobile:** +6680-657-8387
+*   **Email:** joecollection.m@gmail.com
 *   **Secure Line ID:** +6680-657-8387
 
 ---
