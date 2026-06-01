@@ -1,928 +1,886 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>Joe Collection — Private Institutional Capital Desk</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-/* ====================================================================
-WORLD CLASS INSTITUTIONAL LUXURY SYSTEM
-JOE COLLECTION 2026
-==================================================================== */
-
-:root{
-
---bg:#05070B;
---bg-soft:#0D1117;
-
---card:rgba(255,255,255,0.045);
-
---gold:#C6A66A;
---gold-soft:#E7D2A8;
-
---white:#F5F7FA;
---text:#AAB2BF;
-
---line:rgba(255,255,255,0.08);
-
---green:#10b981;
-
-}
-
-/* ====================================================================
-RESET
-==================================================================== */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-
-background:
-radial-gradient(circle at top,
-rgba(198,166,106,0.08),
-transparent 25%),
-
-linear-gradient(
-180deg,
-#05070B 0%,
-#0B1017 100%
-);
-
-color:var(--white);
-
-font-family:'Inter',sans-serif;
-
-padding:60px 24px;
-
-max-width:980px;
-
-margin:0 auto;
-
-line-height:1.9;
-
-letter-spacing:.02em;
-
--webkit-font-smoothing:antialiased;
-
-overflow-x:hidden;
-
-position:relative;
-
-}
-
-/* ====================================================================
-BACKGROUND GRID
-==================================================================== */
-
-body::before{
-
-content:"";
-
-position:fixed;
-inset:0;
-
-background-image:
-linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-
-background-size:60px 60px;
-
-opacity:.25;
-
-pointer-events:none;
-
-z-index:-1;
-
-}
-
-/* ====================================================================
-HEADINGS
-==================================================================== */
-
-h1,h2,h3{
-
-font-family:'Cormorant Garamond',serif;
-
-font-weight:600;
-
-}
-
-h2{
-
-font-size:20px;
-
-font-weight:600;
-
-color:var(--gold-soft);
-
-text-transform:uppercase;
-
-letter-spacing:.22em;
-
-margin-top:70px;
-
-margin-bottom:24px;
-
-padding-bottom:12px;
-
-border-bottom:1px solid rgba(231,210,168,0.15);
-
-}
-
-p{
-
-font-size:16px;
-
-color:var(--white);
-
-margin-bottom:28px;
-
-opacity:.92;
-
-}
-
-ul{
-
-padding-left:22px;
-
-margin-bottom:32px;
-
-}
-
-li{
-
-font-size:15px;
-
-color:var(--white);
-
-margin-bottom:14px;
-
-opacity:.9;
-
-}
-
-li strong{
-
-color:var(--gold-soft);
-
-font-weight:600;
-
-}
-
-hr{
-
-border:0;
-
-height:1px;
-
-background:
-linear-gradient(
-to right,
-transparent,
-rgba(231,210,168,0.25),
-transparent
-);
-
-margin:60px 0;
-
-}
-
-/* ====================================================================
-TICKER
-==================================================================== */
-
-.ticker-container{
-
-background:rgba(255,255,255,0.03);
-
-border-top:1px solid rgba(16,185,129,0.25);
-
-border-bottom:1px solid rgba(16,185,129,0.25);
-
-backdrop-filter:blur(14px);
-
-padding:16px 0;
-
-margin-bottom:70px;
-
-overflow:hidden;
-
-display:flex;
-
-border-radius:14px;
-
-}
-
-.ticker-wrapper{
-
-display:flex;
-
-width:max-content;
-
-}
-
-.ticker-text{
-
-font-size:12px;
-
-font-weight:600;
-
-color:#34D399;
-
-letter-spacing:.24em;
-
-white-space:nowrap;
-
-text-transform:uppercase;
-
-animation:true-infinite-loop 28s linear infinite;
-
-opacity:.92;
-
-}
-
-@keyframes true-infinite-loop{
-
-0%{
-transform:translate3d(0,0,0);
-}
-
-100%{
-transform:translate3d(-50%,0,0);
-}
-
-}
-
-/* ====================================================================
-HEADER
-==================================================================== */
-
-.brand-header{
-
-text-align:center;
-
-margin-top:30px;
-
-margin-bottom:70px;
-
-position:relative;
-
-}
-
-.brand-header::after{
-
-content:"";
-
-width:120px;
-height:1px;
-
-background:
-linear-gradient(
-to right,
-transparent,
-rgba(231,210,168,0.8),
-transparent
-);
-
-display:block;
-
-margin:24px auto 0;
-
-}
-
-.brand-logo{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:54px;
-
-font-weight:600;
-
-color:var(--white);
-
-letter-spacing:.22em;
-
-text-transform:uppercase;
-
-margin-bottom:12px;
-
-}
-
-.brand-sub{
-
-font-size:24px;
-
-font-weight:500;
-
-color:var(--gold-soft);
-
-letter-spacing:.18em;
-
-text-transform:uppercase;
-
-margin-top:18px;
-
-margin-bottom:18px;
-
-}
-
-.brand-description{
-
-font-size:15px;
-
-color:var(--text);
-
-font-style:italic;
-
-letter-spacing:.04em;
-
-max-width:700px;
-
-margin:auto;
-
-}
-
-/* ====================================================================
-GATEWAY MATRIX
-==================================================================== */
-
-.gateway-matrix{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(300px,1fr));
-
-gap:26px;
-
-margin:45px 0;
-
-}
-
-/* ====================================================================
-BUTTON CORE
-==================================================================== */
-
-.btn-gateway{
-
-display:flex;
-
-align-items:center;
-justify-content:space-between;
-
-padding:26px 28px;
-
-font-size:13px;
-
-font-weight:700;
-
-text-decoration:none;
-
-letter-spacing:.16em;
-
-text-transform:uppercase;
-
-border-radius:20px;
-
-transition:
-transform .45s cubic-bezier(0.16,1,0.3,1),
-box-shadow .45s ease,
-border .45s ease;
-
-position:relative;
-
-overflow:hidden;
-
-backdrop-filter:blur(14px);
-
-}
-
-/* ====================================================================
-HOSPITALITY
-==================================================================== */
-
-.btn-hospitality-prime{
-
-color:#fff;
-
-background:
-linear-gradient(
-135deg,
-#7C1F1F,
-#4A1010
-);
-
-border:1px solid rgba(255,255,255,0.08);
-
-box-shadow:
-0 12px 30px rgba(124,31,31,0.35),
-inset 0 1px 1px rgba(255,255,255,0.08);
-
-}
-
-.btn-hospitality-prime:hover{
-
-transform:
-translateY(-8px)
-scale(1.01);
-
-box-shadow:
-0 20px 45px rgba(124,31,31,0.48);
-
-filter:brightness(1.08);
-
-}
-
-/* ====================================================================
-LAND
-==================================================================== */
-
-.btn-land-prime{
-
-color:#fff;
-
-background:
-linear-gradient(
-135deg,
-#263040,
-#121822
-);
-
-border:1px solid rgba(231,210,168,0.22);
-
-box-shadow:
-0 12px 30px rgba(0,0,0,0.35),
-inset 0 1px 1px rgba(255,255,255,0.06);
-
-}
-
-.btn-land-prime:hover{
-
-transform:
-translateY(-8px)
-scale(1.01);
-
-border-color:rgba(231,210,168,0.5);
-
-box-shadow:
-0 20px 45px rgba(0,0,0,0.5);
-
-}
-
-/* ====================================================================
-COMMS MATRIX
-==================================================================== */
-
-.secure-comms-matrix{
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(240px,1fr));
-
-gap:18px;
-
-margin-top:36px;
-
-}
-
-/* ====================================================================
-COMMS BUTTONS
-==================================================================== */
-
-.btn-secure-comms{
-
-display:flex;
-
-align-items:center;
-justify-content:center;
-
-gap:12px;
-
-padding:18px 22px;
-
-font-size:13px;
-
-font-weight:600;
-
-text-decoration:none;
-
-border-radius:16px;
-
-color:#fff;
-
-transition:all .35s cubic-bezier(0.16,1,0.3,1);
-
-border:1px solid rgba(255,255,255,0.08);
-
-backdrop-filter:blur(12px);
-
-}
-
-.btn-secure-comms:hover{
-
-transform:
-translateY(-5px)
-scale(1.01);
-
-filter:brightness(1.08);
-
-}
-
-.btn-whatsapp{
-
-background:
-linear-gradient(
-135deg,
-#16A34A,
-#166534
-);
-
-box-shadow:
-0 10px 25px rgba(22,163,74,0.3);
-
-}
-
-.btn-gmail{
-
-background:
-linear-gradient(
-135deg,
-#DC2626,
-#991B1B
-);
-
-box-shadow:
-0 10px 25px rgba(220,38,38,0.28);
-
-}
-
-.btn-line{
-
-background:
-linear-gradient(
-135deg,
-#10B981,
-#047857
-);
-
-box-shadow:
-0 10px 25px rgba(16,185,129,0.28);
-
-}
-
-/* ====================================================================
-FOOTER
-==================================================================== */
-
-.corporate-footer{
-
-font-size:11px;
-
-color:var(--gold-soft)!important;
-
-text-align:center;
-
-margin-top:80px;
-
-letter-spacing:.12em;
-
-opacity:.85;
-
-padding-top:40px;
-
-border-top:1px solid rgba(255,255,255,0.06);
-
-}
-
-/* ====================================================================
-MOBILE
-==================================================================== */
-
-@media(max-width:768px){
-
-body{
-
-padding:36px 20px;
-
-}
-
-.brand-logo{
-
-font-size:36px;
-
-letter-spacing:.16em;
-
-}
-
-.brand-sub{
-
-font-size:18px;
-
-}
-
-h2{
-
-font-size:16px;
-
-}
-
-p{
-
-font-size:15px;
-
-}
-
-.btn-gateway{
-
-padding:22px;
-
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Joe Collection — Private Institutional Capital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ================================================================
+       DESIGN SYSTEM — SOVEREIGN BLACK GOLD  (Mobile-First v3)
+    ================================================================ */
+    :root {
+      --obsidian:     #0d0f14;
+      --obsidian-mid: #13161e;
+      --obsidian-hi:  #1c2030;
+      --gold-hi:      #e8c97a;
+      --gold-mid:     #c9a84c;
+      --gold-trace:   rgba(201,168,76,0.12);
+      --gold-border:  rgba(201,168,76,0.25);
+      --ivory:        #f2ede6;
+      --ivory-dim:    rgba(242,237,230,0.65);
+      --ivory-ghost:  rgba(242,237,230,0.18);
+      --white:        #ffffff;
+      --emerald-hi:   #10b981;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Montserrat', sans-serif;
+      --font-accent:  'EB Garamond', Georgia, serif;
+      --ease-luxury:  cubic-bezier(0.16, 1, 0.3, 1);
+
+      /* Spacing scale */
+      --sp-xs: 12px;
+      --sp-sm: 20px;
+      --sp-md: 32px;
+      --sp-lg: 52px;
+      --sp-xl: 72px;
+
+      /* Side padding — scales with screen */
+      --px: clamp(18px, 5vw, 48px);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--obsidian);
+      color: var(--ivory);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      /* prevent content from ever exceeding screen */
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    /* Grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    /* ── TICKER ──────────────────────────────────────────────── */
+    .ticker-rail {
+      position: relative;
+      background: var(--obsidian-mid);
+      border-top: 1px solid var(--gold-border);
+      border-bottom: 1px solid var(--gold-border);
+      padding: 12px 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .ticker-rail::before,
+    .ticker-rail::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 48px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .ticker-rail::before { left: 0; background: linear-gradient(to right, var(--obsidian-mid), transparent); }
+    .ticker-rail::after  { right: 0; background: linear-gradient(to left,  var(--obsidian-mid), transparent); }
+
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker-scroll 32s linear infinite;
+    }
+    .ticker-item {
+      font-family: var(--font-body);
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      color: var(--emerald-hi);
+      padding: 0 48px;
+    }
+    .ticker-dot { color: var(--gold-mid); margin: 0 8px; }
+
+    @keyframes ticker-scroll {
+      0%   { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-50%, 0, 0); }
+    }
+
+    /* ── PAGE WRAPPER ────────────────────────────────────────── */
+    .page-wrapper {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 var(--px) var(--sp-xl);
+    }
+
+    /* ── HERO CARD — 3D EMBOSSED PREMIUM ────────────────────── */
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: clamp(40px, 8vw, 72px) clamp(20px, 5vw, 56px) clamp(36px, 7vw, 60px);
+      margin: clamp(24px, 5vw, 44px) 0 0;
+
+      /* Deep obsidian plate */
+      background: linear-gradient(160deg, #1a1f2e 0%, #0f1119 50%, #13161f 100%);
+
+      /* 3D emboss: bright top-left edge, deep shadow bottom-right */
+      border-radius: 6px;
+      border-top: 1px solid rgba(255,255,255,0.09);
+      border-left: 1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(0,0,0,0.5);
+      border-bottom: 1px solid rgba(0,0,0,0.6);
+
+      box-shadow:
+        /* outer lift — large diffuse */
+        0 24px 64px rgba(0,0,0,0.75),
+        /* outer crisp bottom edge */
+        0 6px 18px rgba(0,0,0,0.6),
+        /* inner top highlight — simulates convex light catch */
+        inset 0 1px 0 rgba(255,255,255,0.10),
+        /* inner left highlight */
+        inset 1px 0 0 rgba(255,255,255,0.05),
+        /* inner bottom shadow — depth press */
+        inset 0 -3px 8px rgba(0,0,0,0.45),
+        /* gold ambient glow */
+        0 0 80px rgba(201,168,76,0.06);
+    }
+
+    /* Gold corner accents — top-left & bottom-right */
+    .hero::before,
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      pointer-events: none;
+    }
+    .hero::before {
+      top: 14px; left: 14px;
+      border-top: 1px solid var(--gold-mid);
+      border-left: 1px solid var(--gold-mid);
+      opacity: 0.6;
+      border-radius: 1px 0 0 0;
+    }
+    .hero::after {
+      bottom: 14px; right: 14px;
+      border-bottom: 1px solid var(--gold-mid);
+      border-right: 1px solid var(--gold-mid);
+      opacity: 0.6;
+      border-radius: 0 0 1px 0;
+    }
+
+    /* ── HERO TOP HALF (eyebrow + JOE) ──────────────────────── */
+    .hero-top {
+      padding-bottom: clamp(20px, 4vw, 28px);
+      opacity: 0;
+      animation: fade-up 1s var(--ease-luxury) 0.2s forwards;
+    }
+    .hero-eyebrow {
+      font-size: clamp(7.5px, 1.8vw, 9px);
+      font-weight: 700;
+      letter-spacing: clamp(3.5px, 1.2vw, 5.5px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      margin-bottom: 18px;
+    }
+    /* "JOE" — top word, large, white */
+    .hero-wordmark {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 10vw, 80px);
+      font-weight: 300;
+      letter-spacing: clamp(12px, 3.5vw, 22px);
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1;
+      word-break: break-word;
+      text-shadow:
+        0 1px 0  rgba(255,255,255,0.08),
+        0 -1px 0 rgba(0,0,0,0.6),
+        0 2px 14px rgba(0,0,0,0.5);
+    }
+
+    /* ── CENTRE DIVIDER — between JOE and Collection ─────────── */
+    .hero-centre-rule {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: clamp(18px, 3.5vw, 26px) 0;
+      height: 1px;
+      opacity: 0;
+      animation: fade-up 0.8s var(--ease-luxury) 0.5s forwards;
+    }
+    .hero-centre-rule::before {
+      content: '';
+      position: absolute;
+      left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(201,168,76,0.15) 10%,
+        rgba(201,168,76,0.55) 35%,
+        var(--gold-mid) 50%,
+        rgba(201,168,76,0.55) 65%,
+        rgba(201,168,76,0.15) 90%,
+        transparent 100%
+      );
+    }
+    .hero-rule-jewel {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      /* match card bg so hairline appears cut */
+      background: linear-gradient(160deg, #1a1f2e 0%, #0f1119 100%);
+      padding: 0 16px;
+    }
+    .hero-rule-diamond {
+      width: 6px; height: 6px;
+      background: var(--gold-mid);
+      transform: rotate(45deg);
+      box-shadow: 0 0 7px rgba(201,168,76,0.6);
+      flex-shrink: 0;
+    }
+    .hero-rule-diamond-sm {
+      width: 3px; height: 3px;
+      background: rgba(201,168,76,0.45);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ── "Collection" — below the divider ───────────────────── */
+    .hero-wordmark-collection {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-style: italic;
+      font-size: clamp(30px, 7vw, 56px);
+      letter-spacing: clamp(10px, 3vw, 20px);
+      color: var(--gold-hi);
+      line-height: 1;
+      word-break: break-word;
+      opacity: 0;
+      animation: fade-up 0.9s var(--ease-luxury) 0.65s forwards;
+      text-shadow:
+        0 1px 0  rgba(255,220,100,0.25),
+        0 -1px 0 rgba(0,0,0,0.5),
+        0 2px 18px rgba(201,168,76,0.22);
+      margin-bottom: clamp(20px, 4vw, 28px);
+    }
+
+    /* ── HERO BOTTOM (subtitle + buttons) ────────────────────── */
+    .hero-bottom {
+      padding-top: clamp(20px, 4vw, 30px);
+      opacity: 0;
+      animation: fade-up 0.9s var(--ease-luxury) 0.85s forwards;
+    }
+    .hero-subtitle {
+      font-family: var(--font-accent);
+      font-size: clamp(13px, 3.2vw, 16px);
+      font-style: italic;
+      color: var(--ivory-dim);
+      letter-spacing: 0.4px;
+      padding: 0 4px;
+      margin-bottom: clamp(26px, 5vw, 36px);
+      line-height: 1.7;
+    }
+
+    /* ── CTA BUTTONS — equal size, red primary, dark secondary ── */
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+    .btn-hero-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      /* identical padding & min-width = equal visual size */
+      padding: clamp(14px, 3.2vw, 18px) clamp(26px, 5.5vw, 38px);
+      min-width: clamp(180px, 38vw, 220px);
+      font-family: var(--font-body);
+      font-size: clamp(9.5px, 2vw, 11px);
+      font-weight: 700;
+      letter-spacing: clamp(2px, 0.8vw, 3px);
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury), filter 0.3s;
+      white-space: nowrap;
+    }
+    .btn-hero-cta:hover  { transform: translateY(-4px); filter: brightness(1.1); }
+    .btn-hero-cta:active { transform: translateY(-1px); }
+
+    /* Primary — burgundy red embossed (matches hospitality palette) */
+    .btn-hero-primary {
+      color: #ffd8d8;
+      background: linear-gradient(140deg, #851c1c 0%, #5c1414 55%, #3d0a0a 100%);
+      border-top:   1px solid rgba(255,160,160,0.2);
+      border-left:  1px solid rgba(255,160,160,0.12);
+      border-right: 1px solid rgba(0,0,0,0.55);
+      border-bottom:1px solid rgba(0,0,0,0.65);
+      box-shadow:
+        0 6px 22px rgba(107,21,21,0.55),
+        0 2px 6px  rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,200,200,0.2),
+        inset 0 -3px 6px rgba(0,0,0,0.35);
+    }
+    .btn-hero-primary:hover {
+      box-shadow:
+        0 14px 38px rgba(107,21,21,0.70),
+        0 4px 10px  rgba(0,0,0,0.5),
+        inset 0 1px 0 rgba(255,200,200,0.25);
+    }
+
+    /* Secondary — obsidian plate with gold border (embossed) */
+    .btn-hero-secondary {
+      color: var(--gold-hi);
+      background: linear-gradient(140deg, #21273a 0%, #141824 100%);
+      border-top:   1px solid rgba(255,255,255,0.10);
+      border-left:  1px solid rgba(255,255,255,0.06);
+      border-right: 1px solid rgba(0,0,0,0.5);
+      border-bottom:1px solid rgba(0,0,0,0.55);
+      box-shadow:
+        0 6px 22px rgba(0,0,0,0.55),
+        0 2px 6px  rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.08),
+        inset 0 -3px 6px rgba(0,0,0,0.35),
+        0 0 0 1px var(--gold-border);
+    }
+    .btn-hero-secondary:hover {
+      box-shadow:
+        0 14px 38px rgba(0,0,0,0.65),
+        inset 0 1px 0 rgba(255,255,255,0.1),
+        0 0 0 1px var(--gold-mid);
+    }
+    .btn-hero-cta svg { width: 13px; height: 13px; fill: currentColor; flex-shrink: 0; }
+
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── SECTION DIVIDER ─────────────────────────────────────── */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: clamp(40px, 8vw, 64px) 0 clamp(28px, 5vw, 44px);
+      /* allow text to shrink if needed */
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+    .section-divider-line {
+      flex: 1;
+      min-width: 20px;
+      height: 1px;
+    }
+    .section-divider-line:first-child { background: linear-gradient(to right, var(--gold-border), transparent); }
+    .section-divider-line:last-child  { background: linear-gradient(to left,  var(--gold-border), transparent); }
+    .section-heading {
+      font-size: clamp(7.5px, 1.8vw, 9px);
+      font-weight: 700;
+      letter-spacing: clamp(2px, 1vw, 4.5px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── SECTION COPY ────────────────────────────────────────── */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 5vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .section-body {
+      font-size: clamp(13px, 3vw, 14.5px);
+      color: var(--ivory-dim);
+      line-height: 1.85;
+      margin-bottom: 32px;
+      max-width: 640px;
+    }
+
+    /* ── GATEWAY BUTTONS ─────────────────────────────────────── */
+    .gateway-grid {
+      display: grid;
+      /* 2 cols on tablet+, 1 col on mobile */
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 16px;
+    }
+    .btn-gateway {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* generous tap target height */
+      padding: clamp(20px, 5vw, 28px) clamp(20px, 5vw, 30px);
+      text-decoration: none;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury);
+      /* ensure text doesn't overflow */
+      min-height: 76px;
+    }
+    .btn-gateway::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.4s var(--ease-luxury);
+    }
+    .btn-gateway:hover { transform: translateY(-4px); }
+    .btn-gateway:hover::before { opacity: 1; }
+    .btn-gateway:active { transform: translateY(0); }
+
+    .btn-gateway-label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: relative;
+      z-index: 1;
+      /* don't let label squeeze the arrow off-screen */
+      flex: 1;
+      min-width: 0;
+    }
+    .btn-gateway-eyebrow {
+      font-size: clamp(8px, 2vw, 9px);
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      /* truncate only on extreme sizes */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .btn-gateway-name {
+      font-family: var(--font-display);
+      font-size: clamp(17px, 4vw, 21px);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      white-space: normal;
+      word-break: break-word;
+    }
+    .btn-gateway-arrow {
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.4s var(--ease-luxury);
+      margin-left: 14px;
+      flex-shrink: 0;
+    }
+    .btn-gateway:hover .btn-gateway-arrow { transform: translateX(5px); }
+
+    /* Hospitality */
+    .btn-hospitality {
+      background: linear-gradient(140deg, #6b1515 0%, #3d0a0a 60%, #280606 100%);
+      border: 1px solid rgba(180,60,60,0.3);
+      box-shadow: 0 6px 28px rgba(107,21,21,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
+      color: #f5d5d5;
+    }
+    .btn-hospitality::before { background: linear-gradient(140deg, #7d1c1c, #4a0f0f); }
+    .btn-hospitality:hover   { box-shadow: 0 14px 40px rgba(107,21,21,0.65), inset 0 1px 0 rgba(255,255,255,0.12); }
+
+    /* Land */
+    .btn-land {
+      background: linear-gradient(140deg, #1e2535 0%, #141825 60%, #0e1119 100%);
+      border: 1px solid var(--gold-border);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06);
+      color: var(--ivory);
+    }
+    .btn-land::before { background: linear-gradient(140deg, #252d42, #181f30); }
+    .btn-land:hover {
+      border-color: var(--gold-mid);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.3);
+    }
+
+    /* ── PROTOCOL CARDS ──────────────────────────────────────── */
+    .protocol-grid {
+      display: grid;
+      /* 3 cols on desktop, 1 col on mobile */
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 14px;
+    }
+    .protocol-card {
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-trace);
+      border-top: 2px solid var(--gold-mid);
+      border-radius: 4px;
+      padding: clamp(20px, 4vw, 28px) clamp(18px, 3.5vw, 24px);
+      transition: border-color 0.35s, box-shadow 0.35s;
+    }
+    .protocol-card:hover {
+      border-color: var(--gold-border);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.4);
+    }
+    .protocol-icon { font-size: 20px; margin-bottom: 14px; display: block; }
+    .protocol-title {
+      font-size: clamp(8.5px, 2vw, 9.5px);
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold-hi);
+      margin-bottom: 10px;
+    }
+    .protocol-body {
+      font-size: clamp(12.5px, 3vw, 13.5px);
+      color: var(--ivory-dim);
+      line-height: 1.8;
+    }
+
+    /* ── CONTACT BLOCK ───────────────────────────────────────── */
+    .contact-block {
+      background: var(--obsidian-mid);
+      border: 1px solid var(--gold-border);
+      border-radius: 4px;
+      padding: clamp(24px, 6vw, 44px) clamp(22px, 5vw, 44px);
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-block::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold-mid), transparent);
+    }
+    .contact-principal {
+      font-size: clamp(8.5px, 2vw, 9.5px);
+      font-weight: 600;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: var(--gold-mid);
+      margin-bottom: 18px;
+    }
+    .contact-name {
+      font-family: var(--font-display);
+      /* Long Thai name — scale down on small screens */
+      font-size: clamp(20px, 5.5vw, 30px);
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: 22px;
+      letter-spacing: 0.5px;
+      word-break: break-word;
+      line-height: 1.2;
+    }
+    .contact-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .contact-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: clamp(12.5px, 3.2vw, 14px);
+      color: var(--ivory-dim);
+      /* wrap long email on small screens */
+      word-break: break-all;
+    }
+    .contact-line-icon {
+      font-size: 14px;
+      width: 20px;
+      text-align: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-line span { word-break: break-word; }
+    .contact-line a {
+      color: var(--gold-hi);
+      text-decoration: none;
+      transition: color 0.25s;
+      word-break: break-all;
+    }
+    .contact-line a:hover { color: var(--white); }
+
+    /* ── COMM BUTTONS ────────────────────────────────────────── */
+    .comms-grid {
+      display: grid;
+      /* 3 cols on desktop, 1 col on mobile */
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+      gap: 12px;
+    }
+    .btn-comm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      /* tall enough to tap comfortably */
+      padding: clamp(15px, 4vw, 18px) 16px;
+      font-family: var(--font-body);
+      font-size: clamp(10px, 2.5vw, 11.5px);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--white);
+      border-radius: 4px;
+      border: 1px solid transparent;
+      transition: transform 0.35s var(--ease-luxury), box-shadow 0.35s var(--ease-luxury), filter 0.35s;
+      min-height: 52px;
+    }
+    .btn-comm:hover  { transform: translateY(-3px); filter: brightness(1.12); }
+    .btn-comm:active { transform: translateY(0); }
+    .btn-comm svg    { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
+
+    .btn-whatsapp {
+      background: linear-gradient(140deg, #1a7a47, #0f5e36);
+      border-color: rgba(26,122,71,0.4);
+      box-shadow: 0 5px 16px rgba(26,122,71,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-whatsapp:hover { box-shadow: 0 12px 30px rgba(26,122,71,0.45); }
+
+    .btn-gmail {
+      background: linear-gradient(140deg, #c0392b, #922b21);
+      border-color: rgba(192,57,43,0.4);
+      box-shadow: 0 5px 16px rgba(192,57,43,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-gmail:hover { box-shadow: 0 12px 30px rgba(192,57,43,0.45); }
+
+    .btn-line {
+      background: linear-gradient(140deg, #0a9e6e, #077a55);
+      border-color: rgba(10,158,110,0.4);
+      box-shadow: 0 5px 16px rgba(10,158,110,0.3), inset 0 1px 0 rgba(255,255,255,0.12);
+    }
+    .btn-line:hover { box-shadow: 0 12px 30px rgba(10,158,110,0.45); }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .site-footer {
+      margin-top: var(--sp-xl);
+      padding-top: var(--sp-md);
+      border-top: 1px solid var(--gold-trace);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+    .footer-mark {
+      font-family: var(--font-display);
+      font-size: clamp(15px, 3.5vw, 18px);
+      font-weight: 300;
+      letter-spacing: clamp(4px, 1.5vw, 6px);
+      text-transform: uppercase;
+      color: var(--gold-mid);
+    }
+    .footer-copy {
+      font-size: clamp(9px, 2vw, 10.5px);
+      letter-spacing: 1.2px;
+      color: var(--ivory-ghost);
+      text-transform: uppercase;
+      /* prevent overflow on narrow screens */
+      word-break: break-word;
+      padding: 0 4px;
+    }
+
+    /* ── SCROLL REVEAL ───────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.75s var(--ease-luxury), transform 0.75s var(--ease-luxury);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── TABLET overrides (≥ 600px) ──────────────────────────── */
+    @media (min-width: 600px) {
+      .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- ====================================================================
-TICKER
-==================================================================== -->
-
-<div class="ticker-container">
-
-<div class="ticker-wrapper">
-
-<span class="ticker-text">
-PRIVATE INSTITUTIONAL PORTFOLIO •
-OFF-MARKET CAPITAL DIVESTMENTS •
-STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION •
-&nbsp;
-</span>
-
-<span class="ticker-text">
-PRIVATE INSTITUTIONAL PORTFOLIO •
-OFF-MARKET CAPITAL DIVESTMENTS •
-STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION •
-&nbsp;
-</span>
-
-</div>
-
-</div>
-
-<!-- ====================================================================
-HEADER
-==================================================================== -->
-
-<div class="brand-header">
-
-<div class="brand-logo">
-JOE COLLECTION
-</div>
-
-<div class="brand-sub">
-GLOBAL ASSET PORTFOLIO
-</div>
-
-<p class="brand-description">
-Private Investment Hub for Institutional Funds,
-Family Offices,
-Strategic Capital Partners,
-and Sovereign-Grade Hospitality Acquisitions.
-</p>
-
-</div>
-
-<hr>
-
-<!-- ====================================================================
-PORTFOLIOS
-==================================================================== -->
-
-<h2>
-Private Asset Gateways
-</h2>
-
-<p>
-Select a secured asset node below to review
-engineering parameters,
-financial metrics,
-and legal due diligence structures.
-</p>
-
-<div class="gateway-matrix">
-
-<!-- ====================================================================
-HOSPITALITY LINK
-==================================================================== -->
-
-<a
-href="https://joecollection.github.io/pattaya-hotel-for-sale/"
-target="_blank"
-rel="noopener noreferrer"
-class="btn-gateway btn-hospitality-prime"
->
-
-<span>
-Hospitality Portfolio
-</span>
-
-<span>
-&#10230;
-</span>
-
-</a>
-
-<!-- ====================================================================
-LAND LINK
-==================================================================== -->
-
-<a
-href="https://joecollection.github.io/prime-land-for-sale/"
-target="_blank"
-rel="noopener noreferrer"
-class="btn-gateway btn-land-prime"
->
-
-<span>
-Exclusive Land Portfolio
-</span>
-
-<span>
-&#10230;
-</span>
-
-</a>
-
-</div>
-
-<hr>
-
-<!-- ====================================================================
-DISCLOSURES
-==================================================================== -->
-
-<h2>
-Institutional Protocols & Disclosures
-</h2>
-
-<p>
-To preserve asset value benchmarks and liquidity metrics,
-all deployment activities conform strictly
-to the following parameters:
-</p>
-
-<ul>
-
-<li>
-<strong>Confidentiality Protocol:</strong>
-Detailed cash flow forecasting,
-transaction modeling,
-and Information Memorandums (IM)
-are strictly managed under verified Non-Disclosure Agreements (NDA).
-</li>
-
-<li>
-<strong>Sovereign Titles:</strong>
-Complete land registry parameters,
-municipal zoning codes,
-and Chanote deeds are maintained
-within verified corporate directories.
-</li>
-
-<li>
-<strong>Asset Inspections:</strong>
-Physical asset verification tours
-and on-site assessments are coordinated exclusively
-following formal clearance
-via our transaction partner desk.
-</li>
-
-</ul>
-
-<hr>
-
-<!-- ====================================================================
-CONTACT
-==================================================================== -->
-
-<h2>
-Secure Communications Capability
-</h2>
-
-<p>
-For sovereign wealth fund allocators,
-corporate vice presidents,
-and direct principal verification,
-please activate an encrypted line below:
-</p>
-
-<p style="font-size:16px; line-height:2;">
-
-<strong>Principal Partner:</strong>
-Monthon M.
-<br>
-
-📱 Mobile / WhatsApp:
-+6680-657-8387
-<br>
-
-📧 Official Email:
-<a
-href="mailto:joecollection.m@gmail.com"
-style="color:#dfba73; text-decoration:none;"
->
-joecollection.m@gmail.com
-</a>
-
-<br>
-
-💬 Secure Line ID:
-<span style="color:#dfba73;">
-+6680-657-8387
-</span>
-
-</p>
-
-<div class="secure-comms-matrix">
-
-<!-- ====================================================================
-WHATSAPP
-==================================================================== -->
-
-<a
-href="https://wa.me/66806578387"
-target="_blank"
-rel="noopener noreferrer"
-class="btn-secure-comms btn-whatsapp"
->
-
-<span>
-WhatsApp Desk
-</span>
-
-</a>
-
-<!-- ====================================================================
-EMAIL
-==================================================================== -->
-
-<a
-href="mailto:joecollection.m@gmail.com"
-class="btn-secure-comms btn-gmail"
->
-
-<span>
-Email Access
-</span>
-
-</a>
-
-<!-- ====================================================================
-LINE
-==================================================================== -->
-
-<a
-href="https://line.me/ti/p/mgj7OxQfp4"
-target="_blank"
-rel="noopener noreferrer"
-class="btn-secure-comms btn-line"
->
-
-<span>
-Secure Line ID
-</span>
-
-</a>
-
-</div>
-
-<p class="corporate-footer">
-
-© 2026 Joe Collection.
-Private Institutional Capital Network.
-All Corporate Rights Reserved.
-
-</p>
+  <!-- TICKER -->
+  <div class="ticker-rail" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Private Institutional Portfolio<span class="ticker-dot">◆</span>Off-Market Capital Divestments<span class="ticker-dot">◆</span>Strategic Acquisitions — NDA Verified<span class="ticker-dot">◆</span>Sovereign Assets Under Management<span class="ticker-dot">◆</span>Freehold Titles — Thailand<span class="ticker-dot">◆</span></span>
+      <span class="ticker-item">Private Institutional Portfolio<span class="ticker-dot">◆</span>Off-Market Capital Divestments<span class="ticker-dot">◆</span>Strategic Acquisitions — NDA Verified<span class="ticker-dot">◆</span>Sovereign Assets Under Management<span class="ticker-dot">◆</span>Freehold Titles — Thailand<span class="ticker-dot">◆</span></span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- HERO — 3D EMBOSSED PREMIUM CARD -->
+    <header class="hero">
+
+      <!-- TOP: eyebrow + JOE -->
+      <div class="hero-top">
+        <p class="hero-eyebrow">Private Institutional Capital Desk</p>
+        <h1 class="hero-wordmark">Joe</h1>
+      </div>
+
+      <!-- DIVIDER — between JOE and Collection -->
+      <div class="hero-centre-rule">
+        <div class="hero-rule-jewel">
+          <div class="hero-rule-diamond-sm"></div>
+          <div class="hero-rule-diamond"></div>
+          <div class="hero-rule-diamond-sm"></div>
+        </div>
+      </div>
+
+      <!-- "Collection" sits right below the line -->
+      <span class="hero-wordmark-collection">Collection</span>
+
+      <!-- BOTTOM: subtitle + CTA buttons -->
+      <div class="hero-bottom">
+        <p class="hero-subtitle">A Private Investment Hub for Institutional Funds &amp; Family Offices Globally</p>
+        <div class="hero-cta-row">
+          <a href="https://joecollection.github.io/pattaya-hotel-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-hero-cta btn-hero-primary">
+            <svg viewBox="0 0 24 24"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 21V12h6v9" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            Hospitality Portfolio
+          </a>
+          <a href="https://joecollection.github.io/prime-land-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-hero-cta btn-hero-secondary">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+            Land Portfolio
+          </a>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- ASSET GATEWAYS -->
+    <section class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Private Asset Gateways</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title">Curated Sovereign Portfolios</h2>
+      <p class="section-body">Select a secured asset node to access engineering parameters, financial metrics, and legal due diligence structures. All transactions governed under verified NDA protocols.</p>
+
+      <div class="gateway-grid">
+        <a href="https://joecollection.github.io/pattaya-hotel-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-hospitality">
+          <div class="btn-gateway-label">
+            <span class="btn-gateway-eyebrow">Premium Hotels &amp; Resorts</span>
+            <span class="btn-gateway-name">Hospitality Portfolio</span>
+          </div>
+          <span class="btn-gateway-arrow">→</span>
+        </a>
+        <a href="https://joecollection.github.io/prime-land-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-land">
+          <div class="btn-gateway-label">
+            <span class="btn-gateway-eyebrow">Freehold &amp; Chanote Titles</span>
+            <span class="btn-gateway-name">Land Portfolio</span>
+          </div>
+          <span class="btn-gateway-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROTOCOLS -->
+    <section class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Institutional Protocols</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title">Engagement Framework</h2>
+      <p class="section-body">All deployment activities conform to institutional-grade parameters, safeguarding asset value benchmarks and liquidity metrics across every transaction.</p>
+
+      <div class="protocol-grid">
+        <div class="protocol-card">
+          <span class="protocol-icon">🔒</span>
+          <p class="protocol-title">Confidentiality Protocol</p>
+          <p class="protocol-body">Cash flow forecasting, transaction modeling, and Information Memorandums are strictly managed under verified Non-Disclosure Agreements.</p>
+        </div>
+        <div class="protocol-card">
+          <span class="protocol-icon">📜</span>
+          <p class="protocol-title">Sovereign Titles</p>
+          <p class="protocol-body">Land registry parameters, municipal zoning codes, and Chanote deeds maintained within verified corporate directories.</p>
+        </div>
+        <div class="protocol-card">
+          <span class="protocol-icon">🏛️</span>
+          <p class="protocol-title">Asset Inspections</p>
+          <p class="protocol-body">Physical verification tours and on-site assessments coordinated exclusively following formal clearance via our transaction partner desk.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="reveal">
+      <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <span class="section-heading">Secure Communications</span>
+        <div class="section-divider-line"></div>
+      </div>
+      <h2 class="section-title">Principal Contact Desk</h2>
+      <p class="section-body">For sovereign wealth fund allocators, corporate vice presidents, and direct principal verification, engage our secure communications desk.</p>
+
+      <div class="contact-block">
+        <p class="contact-principal">Principal Partner</p>
+        <h3 class="contact-name">Monthon Mahakijdumrongnukul</h3>
+        <div class="contact-lines">
+          <div class="contact-line">
+            <span class="contact-line-icon">📱</span>
+            <span>Mobile / WhatsApp: <a href="tel:+66806578387">+66 80-657-8387</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-line-icon">📧</span>
+            <span>Email: <a href="mailto:joecollection.m@gmail.com">joecollection.m@gmail.com</a></span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-line-icon">💬</span>
+            <span>Line ID: <a href="https://line.me/ti/p/mgj7OxQfp4" target="_blank">+66 80-657-8387</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comms-grid">
+        <a href="https://wa.me/66806578387" target="_blank" rel="noopener noreferrer" class="btn-comm btn-whatsapp">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.66.986 3.284 1.489 4.968 1.491 5.482 0 9.944-4.461 9.947-9.945.002-2.656-1.03-5.153-2.906-7.03C16.824 1.793 14.322 1.06 11.67 1.06 6.185 1.06 1.72 5.522 1.718 11.008c-.001 1.714.46 3.326 1.346 4.81l-.988 3.605 3.7-.977zm11.667-6.72c-.179-.089-1.055-.52-1.219-.58-.164-.06-.284-.089-.404.09-.119.179-.463.58-.567.699-.104.12-.209.134-.388.045-.179-.089-.757-.279-1.442-.89-.533-.475-.892-1.06-1.997-1.239-.104-.179-.011-.276.079-.365.08-.08.179-.209.269-.314.09-.104.119-.179.179-.299.06-.119.03-.224-.015-.314-.045-.09-.404-.975-.553-1.336-.146-.352-.295-.304-.404-.31-.104-.005-.224-.006-.344-.006-.12 0-.314.045-.478.224-.164.179-.627.612-.627 1.493s.642 1.73.732 1.851c.089.12 1.264 1.93 3.062 2.704.428.184.762.295 1.022.377.43.136.823.117 1.134.07.347-.052 1.054-.43 1.202-.846.149-.417.149-.775.104-.846-.045-.071-.164-.12-.344-.209z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:joecollection.m@gmail.com" class="btn-comm btn-gmail">
+          <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg>
+          Email Desk
+        </a>
+        <a href="https://line.me/ti/p/mgj7OxQfp4" target="_blank" rel="noopener noreferrer" class="btn-comm btn-line">
+          <svg viewBox="0 0 24 24"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
+          LINE Secure
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer reveal">
+      <span class="footer-mark">Joe Collection</span>
+      <span class="footer-copy">&copy; 2026 — Private Institutional Capital Network. All Rights Reserved.</span>
+    </footer>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => io.observe(el));
+  </script>
 
 </body>
-
 </html>
