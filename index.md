@@ -8,7 +8,7 @@ Welcome to the Private Investment Hub of Joe Collection. We curate premier, high
 
 ---
 
-## 🏛️ PRIVATELY CURATED PORTFOLIOS
+## 🏛️ PRIVATELY CURATED PORTfolios
 
 Select a portfolio below to access exclusive asset specifications, financial modeling, and due diligence documentation.
 
@@ -18,7 +18,7 @@ Select a portfolio below to access exclusive asset specifications, financial mod
 *   **Total Inventory:** 567 Keys & Suites (Combined Portfolio)
 *   **Tenure:** Freehold (Chanote Title Deeds)
 
-👉 **[🔗 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS FOR SALE)](https://joecollection.github.io/pattaya-hotel-for-sale/)**
+👉 **[🔗 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS FOR SALE)](https://github.io)**
 
 ---
 
@@ -28,8 +28,7 @@ Select a portfolio below to access exclusive asset specifications, financial mod
 *   **Total Area:** Multi-Rai Premium Portfolios with high FAR indices
 *   **Zoning:** Verified Commercial Red & Brown Zones
 
-👉 **[🔗 ENTER LAND PORTFOLIO (6 PREMIUM PLOTS FOR SALE)](https://joecollection.github.io/prime-land-for-sale/)** 
-
+👉 **[🔗 ENTER LAND PORTFOLIO (6 PREMIUM PLOTS FOR SALE)](https://joecollection.github.io/prime-land-for-sale/)**
 
 ---
 
@@ -46,9 +45,12 @@ Our engagement structure is designed to safeguard transaction confidentiality wh
 
 For qualified inquiries, project summaries, or to initiate a secure transaction framework, please contact our principal desk:
 
-*   **Principal Partner:** Monthon Mahakijdumrongnukul
+*   **Principal Partner:** Monthon M.
 *   **Mobile / WhatsApp:** +6680-657-8387
 *   **Official Email:** joecollection.m@gmail.com
-*   **Secure Line ID:** +6680-657-8387
+*   **Secure Line ID:** @joecollection
+
+---
+
 
 ---
