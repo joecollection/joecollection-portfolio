@@ -6,7 +6,7 @@
   <title>Joe Collection — Private Institutional Capital Desk</title>
   <style>
     /* ==================================================================== 
-       1. LUXURY SLATE & GOLD ARCHITECTURE (พื้นหลังเทาเข้ม / หัวข้อทอง / ข้อความขาว)
+       1. LUXURY SLATE & GOLD ARCHITECTURE
        ==================================================================== */
     body {
       background-color: #1a1f2c; /* สีเทาชาร์โคลพรีเมียมเข้ม - สุขุม คลีน และมีมิติ */
@@ -46,7 +46,7 @@
     }
 
     /* ==================================================================== 
-       2. TRUE INFINITE TICKER (ตัววิ่งเขียวมรกต ไหลลื่นต่อเนื่อง ไม่มีช่องว่าง)
+       2. TRUE INFINITE TICKER
        ==================================================================== */
     .ticker-container {
       background-color: #111823; 
@@ -106,17 +106,18 @@
       filter: brightness(1.1);
     }
     
-    /* 🎯 ปรับปรุง: ปุ่ม Exclusive Land ให้เป็นสีทองแชมเปญนูนมิติ 3D สวยเด่น */
+    /* 🎯 ปรับปรุงใหม่: แก้ไขปุ่มที่ดินเป็น "สีคาร์บอนโครเมียมรมดำ" ตัดเส้นขอบด้วยทองแชมเปญบางๆ นูนเงา 3D ดึงความนิ่งระดับสากลกลับมาครับ */
     .btn-land-prime {
-      color: #1a1f2c; /* ตัวหนังสือสีเข้มเพื่อให้อ่านง่ายบนพื้นทอง */
-      background: linear-gradient(135deg, #dfba73, #b8934d); 
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 15px rgba(223, 186, 115, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+      color: #ffffff; 
+      background: linear-gradient(135deg, #242c3d, #141a26); /* สีมืดรมดำมีมิติ */
+      border: 1px solid rgba(223, 186, 115, 0.35); /* ขอบเส้นด้ายสีทองแชมเปญพรีเมียม */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.4);
     }
     .btn-land-prime:hover {
       transform: translateY(-4px);
-      background: linear-gradient(135deg, #ebd19b, #cfa85e);
-      box-shadow: 0 12px 25px rgba(223, 186, 115, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+      border-color: #dfba73; /* ขอบเรืองแสงสีทองสว่างขึ้นเมื่อเมาส์วาง */
+      background: linear-gradient(135deg, #2d384e, #1a2230);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.15);
     }
 
     /* ==================================================================== 
@@ -147,15 +148,24 @@
     .btn-gmail { background: linear-gradient(135deg, #dc2626, #b91c1c); box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2); }
     .btn-line { background: linear-gradient(135deg, #16a34a, #059669); box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2); }
     .btn-secure-comms svg { width: 16px; height: 16px; fill: currentColor; }
+    
+    .corporate-footer {
+      font-size: 11px; 
+      color: #dfba73 !important; 
+      text-align: center; 
+      margin-top: 60px; 
+      letter-spacing: 0.5px;
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
 
-  <!-- ตัวหนังสือวิ่งแบบต่อเนื่องไร้รอยต่อ -->
+  <!-- ระบบตัววิ่งสีเขียวมรกตสดใส วิ่งต่อเนื่อง 100% -->
   <div class="ticker-container">
     <div class="ticker-wrapper">
-      <span class="ticker-text">✨ EXCLUSIVE REAL ESTATE INVESTMENT OPPORTUNITY • HIGH ACCUMULATIVE RETURNS • CONFIDENTIAL DUE ZONING REGULATION AVAILABLE UPON NDA ✨ &nbsp;</span>
-      <span class="ticker-text">✨ EXCLUSIVE REAL ESTATE INVESTMENT OPPORTUNITY • HIGH ACCUMULATIVE RETURNS • CONFIDENTIAL DUE ZONING REGULATION AVAILABLE UPON NDA ✨ &nbsp;</span>
+      <span class="ticker-text">✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;</span>
+      <span class="ticker-text">✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;</span>
     </div>
   </div>
 
@@ -165,7 +175,6 @@
       JOE COLLECTION
     </span>
     <div style="width: 60px; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent); margin: 15px auto;"></div>
-
 
         <h1 style="font-size: 24px; font-weight: 400; color: #dfba73; letter-spacing: 4px; text-transform: uppercase; margin-top: 12px; margin-bottom: 0;">
       GLOBAL ASSET PORTFOLIO
@@ -185,14 +194,14 @@
 
   <div class="gateway-matrix">
     <!-- ปุ่มโรงแรมหรูกดนูนมิติเฉดสีแดงเบอร์กันดี (Burgundy Vibrant 3D) -->
-    <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-hospitality-prime">
-      <span>Hospitality Portfolio (Pattaya Hotels)</span>
+    <a href="https://joecollection.github.io/pattaya-hotel-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-hospitality-prime">
+      <span>Hospitality Portfolio </span>
       <span>&#10230;</span>
     </a>
     
-    <!-- ปุ่มที่ดินเปล่าเปลี่ยนโฉมใหม่เป็นสีทองแชมเปญนูนมิติ 3D (Champagne Gold 3D) -->
-    <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-land-prime">
-      <span>Exclusive Land (6 Premium Plots)</span>
+    <!-- ปุ่มที่ดินเปล่าเปลี่ยนโฉมใหม่เป็นสีคาร์บอนโครเมียมรมดำตัดเส้นขอบทองแชมเปญนูนมิติ 3D -->
+    <a href="https://joecollection.github.io/prime-land-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-land-prime">
+      <span>Exclusive Land Portfolio</span>
       <span>&#10230;</span>
     </a>
   </div>
@@ -241,13 +250,13 @@
 
     <!-- Secure Line ID Desk -->
     <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-secure-comms btn-line">
-      <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor; margin-right:4px;"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224-.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187s.023-.01.023-.01zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
+      <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor; margin-right:4px;"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224-.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187s.023-.01.023-.01zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
       <span>Secure Line ID Desk</span>
     </a>
   </div>
 
-  <!-- 🎯 ข้อความลิขสิทธิ์ท้ายเว็บ ปรับปรุงให้เปล่งประกายสีทองแชมเปญพรีเมียมเรียบร้อยสมบูรณ์ครับ -->
-  <p style="font-size: 11px; color: #dfba73; text-align: center; margin-top: 60px; letter-spacing: 0.5px; opacity: 0.9;">
+  <!-- 🎯 ข้อความลิขสิทธิ์ท้ายเว็บสีทองแชมเปญพรีเมียม สวยงามเป็นเอกภาพเสร็จสิ้นร้อยเปอร์เซ็นต์ครับ -->
+  <p class="corporate-footer">
     &copy; 2026 Joe Collection. Private Institutional Capital Network. All Corporate Rights Reserved.
   </p>
 
