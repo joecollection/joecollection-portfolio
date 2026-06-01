@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joe Collection - Global Asset Portfolio</title>
   <style>
-    /* Timeless Luxury Typography & Theme Color (Midnight Gold) */
+    /* Timeless Luxury Typography & Theme Color (Midnight Obsidian) */
     body {
       background-color: #0b111e;
       color: #ffffff;
@@ -15,6 +15,7 @@
       margin: 0 auto;
       line-height: 1.7;
     }
+    
     h2 {
       font-family: 'Georgia', serif;
       color: #ffffff;
@@ -22,20 +23,28 @@
       border-bottom: 1px solid #222;
       padding-bottom: 10px;
     }
+    
     h3 {
       font-family: 'Georgia', serif;
       color: #d4af37;
       margin-top: 25px;
     }
-    ul { padding-left: 20px; margin-bottom: 25px; }
-    li { margin-bottom: 8px; }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
     
-    /* ระบบแถบตัวหนังสือวิ่งสีทองสไตล์หรูหราแบบต่อเนื่องไม่สะดุด (True Infinite Loop) */
+    /* 🏆 ปรับปรุง: ตัวหนังสือวิ่งเฉดสีเขียวมรกตพรีเมียม (Emerald Premium) ระบบวนลูปไร้รอยต่อ */
     .marquee-container {
       background-color: #111e2e;
       padding: 14px 0;
-      border-top: 1px solid #d4af37;
-      border-bottom: 1px solid #d4af37;
+      border-top: 1px solid #10b981;
+      border-bottom: 1px solid #10b981;
       margin-bottom: 40px;
       overflow: hidden;
       display: flex;
@@ -43,7 +52,7 @@
     .marquee-text {
       font-family: 'Georgia', serif;
       font-size: 14px;
-      color: #d4af37;
+      color: #10b981; /* เขียวมรกตพรีเมียมตามที่คุณ Joe เลือก */
       letter-spacing: 2px;
       white-space: nowrap;
       animation: marquee 35s linear infinite;
@@ -54,7 +63,7 @@
       100% { transform: translate3d(-100%, 0, 0); }
     }
 
-    /* Elite Call-to-Action Buttons */
+    /* 🏆 ปรับปรุง: ปุ่มหลัก/ปุ่มโรงแรม เฉดสีแดงไวน์เบอร์กันดีหรูหรา ตัวอักษรขาว (Burgundy Executive Line) */
     .btn-gold {
       display: inline-flex;
       align-items: center;
@@ -62,21 +71,23 @@
       padding: 14px 28px;
       font-size: 14px;
       font-weight: bold;
-      color: #111e2e;
-      background-color: #d4af37;
-      border: 1px solid #d4af37;
+      color: #ffffff; /* ตัวหนังสือขาว */
+      background-color: #7f1d1d; /* สีแดงไวน์เบอร์กันดี */
+      border: 1px solid #7f1d1d;
       border-radius: 4px;
       text-decoration: none;
       letter-spacing: 1px;
-      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+      box-shadow: 0 4px 15px rgba(127, 29, 29, 0.3);
       transition: all 0.3s ease;
       margin-bottom: 10px;
     }
     .btn-gold:hover {
-      background-color: #f1c40f;
+      background-color: #991b1b; /* สว่างขึ้นเล็กน้อยตอนเมาส์วาง */
+      border-color: #991b1b;
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      box-shadow: 0 6px 20px rgba(127, 29, 29, 0.5);
     }
+    
     .btn-silver {
       display: inline-flex;
       align-items: center;
@@ -98,9 +109,15 @@
       border-color: #ffffff;
       transform: translateY(-2px);
     }
-    .button-group { display: flex; flex-wrap: wrap; gap: 15px; margin: 25px 0 40px 0; }
+    
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 25px 0 40px 0;
+    }
 
-    /* การจัดวางกล่องปุ่มติดต่อสื่อสารระดับมืออาชีพชั้นสูง */
+    /* การจัดวางกล่องปุ่มติดต่อสื่อสารประจำแบรนด์ */
     .comms-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -117,22 +134,32 @@
       font-weight: 500;
       text-decoration: none;
       border-radius: 4px;
-      background-color: #111e2e;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #e5e7eb;
+      color: #ffffff;
       transition: all 0.3s ease;
     }
     .btn-comms:hover {
-      border-color: #d4af37;
-      color: #ffffff;
-      background-color: #16253a;
       transform: translateY(-2px);
+      filter: brightness(1.15);
+    }
+
+    /* 🏆 ปรับปรุง: สีประจำตัวแอปพลิเคชันเวอร์ชันหรูหรา (Official Brand Identity Colors) */
+    .btn-whatsapp {
+      background-color: #128c7e; /* WhatsApp Deep Green */
+      border: 1px solid #128c7e;
+    }
+    .btn-gmail {
+      background-color: #b91c1c; /* Gmail Dark Metallic Red */
+      border: 1px solid #b91c1c;
+    }
+    .btn-line {
+      background-color: #06c755; /* Line Official Green */
+      border: 1px solid #06c755;
     }
   </style>
 </head>
 <body>
 
-  <!-- ตัวหนังสือวิ่งสีทองสไตล์เอ็กซ์คลูซีฟ (ระบบ Double-Buffer วิ่งต่อเนื่องไม่สะดุดก้อนขาวตอนจบประโยค) -->
+  <!-- แถบตัวหนังสือวิ่งสีเขียวมรกตพรีเมียม (ระบบ Double-Buffer วิ่งต่อเนื่องไม่สะดุด) -->
   <div class="marquee-container">
     <div class="marquee-text">
       ✨ EXCLUSIVE REAL ESTATE INVESTMENT OPPORTUNITY • HIGH ACCUMULATIVE RETURNS • CONFIDENTIAL DUE ZONING REGULATION AVAILABLE UPON NDA ✨
@@ -162,7 +189,7 @@
   <h2>🏛️ PRIVATELY CURATED PORTFOLIOS</h2>
   <p style="color: #a0aec0;">Select a portfolio below to access exclusive asset specifications, financial modeling, and due diligence documentation.</p>
 
-  <!-- โซนปุ่มกดนำทางที่ฝังลิงก์ตัวเต็มอย่างสมบูรณ์แล้ว -->
+  <!-- โซนปุ่มกดนำทางสีแดงเบอร์กันดีและสีเงินหรูหรา -->
   <div class="button-group">
     <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-gold">
       🏢 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS) &rarr;
@@ -188,7 +215,6 @@
   <h2>📞 INTERNATIONAL INVESTMENT RELATIONS</h2>
   <p style="color: #a0aec0;">For qualified inquiries, project summaries, or to initiate a secure transaction framework, please contact our principal desk:</p>
   
-  <!-- ข้อความตัวหนังสือแบบดั้งเดิมของคุณ Joe -->
   <p style="font-size: 16px; color: #ffffff; margin-bottom: 25px;">
     <strong>Principal Partner:</strong> Monthon M.<br>
     📱 Mobile / WhatsApp: +6680-657-8387<br>
@@ -196,29 +222,28 @@
     💬 Secure Line ID: <span style="color: #d4af37;">@joecollection</span>
   </p>
 
-  <!-- กล่องปุ่มช่องทางติดต่อสไตล์โมเดิร์นลักชัวรีพร้อมข้อมูลครบถ้วน -->
+  <!-- 🏆 กล่องปุ่มกดช่องทางการติดต่อสื่อสารที่ปรับเฉดสีตาม Brand Apps จริง เรียบร้อยสมบูรณ์ -->
   <div class="comms-grid">
-    <!-- ปุ่มติดต่อโทรศัพท์มือถือ / WhatsApp (เชื่อมตรงเข้าแอป) -->
-    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn-comms">
+    <!-- ปุ่มสีแอป WhatsApp -->
+    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn-comms btn-whatsapp">
       <span>📞 WhatsApp: +6680-657-8387</span>
     </a>
 
-    <!-- ปุ่มส่งอีเมลติดต่อบริษัท (กดแล้วเด้งเปิดหน้าเมลพิมพ์อัตโนมัติ) -->
-    <a href="mailto:joecollection.m@gmail.com" class="btn-comms">
+    <!-- ปุ่มสีแอป Gmail -->
+    <a href="mailto:joecollection.m@gmail.com" class="btn-comms btn-gmail">
       <span>📧 Email: joecollection.m@gmail.com</span>
     </a>
 
-    <!-- ปุ่มแอดไอดีไลน์ทางการ (Secure Line ID Desk) -->
-    <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-comms">
+    <!-- ปุ่มสีแอป Line Official -->
+    <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-comms btn-line">
       <span>💬 Secure Line ID Desk: @joecollection</span>
     </a>
   </div>
 
-  <!-- Corporate Copyright footer สไตล์สากลเคร่งขรึม -->
+  <!-- Corporate Copyright footer -->
   <p style="font-size: 11px; color: #4b5563; text-align: center; margin-top: 60px;">
     &copy; 2026 Joe Collection. Private Institutional Capital Network. All Corporate Rights Reserved.
   </p>
 
 </body>
 </html>
-
