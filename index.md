@@ -18,7 +18,7 @@ Select a portfolio below to access exclusive asset specifications, financial mod
 *   **Total Inventory:** 567 Keys & Suites (Combined Portfolio)
 *   **Tenure:** Freehold (Chanote Title Deeds)
 
-👉 **[🔗 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS FOR SALE)](https://github.io)**
+👉 **[🔗 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS FOR SALE)](https://joecollection.github.io/pattaya-hotel-for-sale/)**
 
 ---
 
@@ -45,10 +45,10 @@ Our engagement structure is designed to safeguard transaction confidentiality wh
 
 For qualified inquiries, project summaries, or to initiate a secure transaction framework, please contact our principal desk:
 
-*   **Principal Partner:** Monthon M.
+*   **Principal Partner:** Monthon Mahakijdumrongnukul
 *   **Mobile / WhatsApp:** +6680-657-8387
 *   **Official Email:** joecollection.m@gmail.com
-*   **Secure Line ID:** @joecollection
+*   **Secure Line ID:** +6680-657-8387
 
 ---
 
