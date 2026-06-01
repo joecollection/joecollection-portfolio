@@ -3,247 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joe Collection - Global Asset Portfolio</title>
+  <title>Joe Collection — Private Institutional Capital Desk</title>
   <style>
-    /* Timeless Luxury Typography & Theme Color (Midnight Obsidian) */
+    /* ==================================================================== 
+       1. GLOBAL INSTITUTIONAL FRAMEWORK (QUIET LUXURY)
+       ==================================================================== */
     body {
-      background-color: #0b111e;
-      color: #ffffff;
+      background-color: #090e17; 
+      color: #f3f4f6;
       font-family: 'Times New Roman', 'Georgia', serif;
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 60px 24px;
+      max-width: 850px;
       margin: 0 auto;
-      line-height: 1.7;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
     }
-    
     h2 {
       font-family: 'Georgia', serif;
+      font-size: 18px;
+      font-weight: 400;
       color: #ffffff;
-      margin-top: 40px;
-      border-bottom: 1px solid #222;
-      padding-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
     }
-    
-    h3 {
-      font-family: 'Georgia', serif;
-      color: #d4af37;
-      margin-top: 25px;
+    p { font-size: 15px; color: #9ca3af; margin-bottom: 25px; }
+    ul { padding-left: 20px; margin-bottom: 30px; }
+    li { font-size: 15px; color: #d1d5db; margin-bottom: 12px; }
+    li strong { color: #ffffff; font-weight: 600; }
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, rgba(223, 186, 115, 0.25), rgba(223, 186, 115, 0.02));
+      margin: 45px 0;
     }
 
-    ul {
-      padding-left: 20px;
-      margin-bottom: 25px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-    
-    /* 🏆 ตัวหนังสือวิ่งเฉดสีเขียวมรกตพรีเมียม (Emerald Premium) ระบบวนลูปไร้รอยต่อ */
-    .marquee-container {
-      background-color: #111e2e;
-      padding: 14px 0;
-      border-top: 1px solid #10b981;
-      border-bottom: 1px solid #10b981;
-      margin-bottom: 40px;
+    /* ==================================================================== 
+       2. SECURE CONTINUOUS MARQUEE (SOPHISTICATED MOTION)
+       ==================================================================== */
+    .ticker-container {
+      background-color: #0d1522;
+      border-top: 1px solid rgba(223, 186, 115, 0.3); 
+      border-bottom: 1px solid rgba(223, 186, 115, 0.3);
+      padding: 12px 0;
+      margin-bottom: 50px;
       overflow: hidden;
       display: flex;
     }
-    .marquee-text {
+    .ticker-text {
       font-family: 'Georgia', serif;
-      font-size: 14px;
-      color: #10b981; /* เขียวมรกตพรีเมียม */
-      letter-spacing: 2px;
+      font-size: 12px;
+      color: #dfba73; 
+      letter-spacing: 3px;
       white-space: nowrap;
-      animation: marquee 35s linear infinite;
-      padding-right: 50px;
+      text-transform: uppercase;
+      animation: institutional-loop 40s linear infinite;
+      padding-right: 60px;
     }
-    @keyframes marquee {
+    @keyframes institutional-loop {
       0% { transform: translate3d(0, 0, 0); }
       100% { transform: translate3d(-100%, 0, 0); }
     }
 
-    /* 🏆 ปุ่มหลัก/ปุ่มโรงแรม เฉดสีแดงไวน์เบอร์กันดีหรูหรา ตัวอักษรขาว (Burgundy Executive Line) */
-    .btn-gold {
+    /* ==================================================================== 
+       3. TRANSACTIONAL PORTFOLIO GATEWAYS (ELITE COMMAND BUTTONS)
+       ==================================================================== */
+    .gateway-matrix {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 35px 0;
+    }
+    .btn-gateway {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      padding: 14px 28px;
-      font-size: 14px;
+      justify-content: space-between;
+      padding: 18px 24px;
+      font-family: 'Georgia', serif;
+      font-size: 13px;
       font-weight: bold;
-      color: #ffffff; /* ตัวหนังสือขาว */
-      background-color: #7f1d1d; /* สีแดงไวน์เบอร์กันดี */
-      border: 1px solid #7f1d1d;
-      border-radius: 4px;
       text-decoration: none;
-      letter-spacing: 1px;
-      box-shadow: 0 4px 15px rgba(127, 29, 29, 0.3);
-      transition: all 0.3s ease;
-      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .btn-gold:hover {
-      background-color: #991b1b; /* สว่างขึ้นเล็กน้อยตอนเมาส์วาง */
-      border-color: #991b1b;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(127, 29, 29, 0.5);
-    }
-    
-    .btn-silver {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 28px;
-      font-size: 14px;
-      font-weight: bold;
+    .btn-hospitality-prime {
       color: #ffffff;
-      background-color: transparent;
-      border: 1px solid #a0aec0;
-      border-radius: 4px;
-      text-decoration: none;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-      margin-bottom: 10px;
+      background-color: #5c1414; 
+      border: 1px solid #5c1414;
+      box-shadow: 0 4px 20px rgba(92, 20, 20, 0.2);
     }
-    .btn-silver:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+    .btn-hospitality-prime:hover {
+      background-color: #731a1a;
+      border-color: #731a1a;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(92, 20, 20, 0.4);
+    }
+    .btn-land-prime {
+      color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(156, 163, 175, 0.35);
+    }
+    .btn-land-prime:hover {
+      background-color: rgba(255, 255, 255, 0.04);
       border-color: #ffffff;
-      transform: translateY(-2px);
-    }
-    
-    .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin: 25px 0 40px 0;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(255, 255, 255, 0.05);
     }
 
-    /* การจัดวางกล่องปุ่มติดต่อสื่อสารประจำแบรนด์ */
-    .comms-grid {
+    /* ==================================================================== 
+       4. PRIVACY-FIRST COMMUNICATIONS CHANNEL
+       ==================================================================== */
+    .secure-comms-matrix {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 15px;
-      margin-top: 25px;
+      gap: 14px;
+      margin-top: 30px;
     }
-    .btn-comms {
+    .btn-secure-comms {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      padding: 14px 20px;
+      justify-content: center;
+      gap: 14px;
+      padding: 16px 22px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 3px;
+      background-color: #0c1424;
+      border: 1px solid rgba(223, 186, 115, 0.2); 
+      color: #e5e7eb;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-secure-comms:hover {
+      border-color: #dfba73; 
       color: #ffffff;
-      transition: all 0.3s ease;
-    }
-    .btn-comms:hover {
+      background-color: #121e33;
       transform: translateY(-2px);
-      filter: brightness(1.15);
-    }
-
-    /* 🏆 สีประจำตัวแอปพลิเคชันเวอร์ชันหรูหรา (Official Brand Identity Colors) */
-    .btn-whatsapp {
-      background-color: #128c7e; /* WhatsApp Deep Green */
-      border: 1px solid #128c7e;
-    }
-    .btn-gmail {
-      background-color: #b91c1c; /* Gmail Dark Metallic Red */
-      border: 1px solid #b91c1c;
-    }
-    .btn-line {
-      background-color: #06c755; /* Line Official Green */
-      border: 1px solid #06c755;
     }
   </style>
 </head>
 <body>
 
-  <!-- แถบตัวหนังสือวิ่งสีเขียวมรกตพรีเมียม (ระบบ Double-Buffer วิ่งต่อเนื่องไม่สะดุด) -->
-  <div class="marquee-container">
-    <div class="marquee-text">
-      ✨ EXCLUSIVE REAL ESTATE INVESTMENT OPPORTUNITY • HIGH ACCUMULATIVE RETURNS • CONFIDENTIAL DUE ZONING REGULATION AVAILABLE UPON NDA ✨
+  <div class="ticker-container">
+    <div class="ticker-text">
+      ✦ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✦
     </div>
-    <div class="marquee-text">
-      ✨ EXCLUSIVE REAL ESTATE INVESTMENT OPPORTUNITY • HIGH ACCUMULATIVE RETURNS • CONFIDENTIAL DUE ZONING REGULATION AVAILABLE UPON NDA ✨
+    <div class="ticker-container" style="border:none; margin:0; padding:0;">
+      <div class="ticker-text">
+        ✦ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✦
+      </div>
     </div>
   </div>
 
-  <!-- LUXURY BRANDING HEADER BY JOE COLLECTION -->
-  <div style="text-align: center; margin-bottom: 50px;">
-    <span style="font-size: 38px; font-weight: 300; letter-spacing: 7px; text-transform: uppercase; display: block; margin-bottom: 5px;">
+  <div style="text-align: center; margin-bottom: 60px;">
+    <span style="font-size: 42px; font-weight: 300; letter-spacing: 9px; text-transform: uppercase; display: block; margin-bottom: 5px;">
       JOE COLLECTION
     </span>
-    <div style="width: 60px; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent); margin: 15px auto;"></div>
-    <h1 style="font-size: 26px; font-weight: 400; color: #d4af37; letter-spacing: 3px; text-transform: uppercase; margin-top: 10px; margin-bottom: 8px;">
+    <div style="width: 50px; height: 1px; background: #dfba73; margin: 20px auto;"></div>
+    <h1 style="font-family: 'Georgia', serif; font-size: 24px; font-weight: 400; color: #dfba73; letter-spacing: 4px; text-transform: uppercase; margin-top: 12px; margin-bottom: 0;">
       GLOBAL ASSET PORTFOLIO
     </h1>
-    <p style="font-size: 15px; color: #8a99ad; font-style: italic; letter-spacing: 1px; margin-top: 0;">
-      Private Investment Hub for Institutional Funds & High-Net-Worth Investors Globally
+    <p style="font-size: 14px; color: #525f73; font-style: italic; letter-spacing: 0.5px; margin-top: 14px; font-family: 'Georgia', serif;">
+      Private Investment Hub for Institutional Funds & Family Offices Globally
     </p>
   </div>
 
-  <hr style="border: 0; height: 1px; background: #222; margin: 40px 0;">
+    <!-- ==================================================================== 
+       🏛️ PRIVATELY CURATED PORTFOLIOS
+       ==================================================================== -->
+  <h2>🏛️ Private Asset Gateways</h2>
+  <p>Select a secured asset node below to review engineering parameters, financial metrics, and legal due diligence structures.</p>
 
-  <!-- 🏛️ PRIVATELY CURATED PORTFOLIOS -->
-  <h2>🏛️ PRIVATELY CURATED PORTFOLIOS</h2>
-  <p style="color: #a0aec0;">Select a portfolio below to access exclusive asset specifications, financial modeling, and due diligence documentation.</p>
-
-  <!-- โซนปุ่มกดนำทางสีแดงเบอร์กันดีและสีเงินหรูหรา -->
-  <div class="button-group">
-    <a href="https://joecollection.github.io/pattaya-hotel-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-gold">
-      🏢 ENTER HOSPITALITY PORTFOLIO (PATTAYA HOTELS) &rarr;
+  <div class="gateway-matrix">
+    <!-- ปุ่มโรงแรมหรู (Burgundy Command Hub) -->
+    <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-hospitality-prime">
+      <span>Hospitality Portfolio (Pattaya Hotels)</span>
+      <span>&#10230;</span>
     </a>
-    <a href="https://joecollection.github.io/prime-land-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-silver">
-      🗺️ ENTER EXCLUSIVE LAND PORTFOLIO (6 PREMIUM PLOTS) &rarr;
+    
+    <!-- ปุ่มที่ดินเปล่า (Sovereign Silver Line) -->
+    <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-land-prime">
+      <span>Exclusive Land (6 Premium Plots)</span>
+      <span>&#10230;</span>
     </a>
   </div>
 
-  <hr style="border: 0; height: 1px; background: #222; margin: 40px 0;">
+  <hr>
 
-  <!-- 📈 INVESTMENT SERVICES & ENGAGEMENT -->
-  <h2>📈 INVESTMENT SERVICES & ENGAGEMENT</h2>
-  <p style="color: #a0aec0;">Our engagement structure is designed to safeguard transaction confidentiality while ensuring seamless execution.</p>
+  <!-- ==================================================================== 
+       📈 INVESTMENT SERVICES & ENGAGEMENT
+       ==================================================================== -->
+  <h2>📈 Institutional Protocols & Disclosures</h2>
+  <p>To preserve asset value benchmarks and liquidity metrics, all deployment activities conform strictly to the following parameters:</p>
   <ul>
-    <li><strong>Confidentiality First:</strong> Detailed financial statements and information memorandums (IM) are strictly protected under standard Non-Disclosure Agreements (NDA).</li>
-    <li><strong>Private Inspections:</strong> On-site asset tours and technical due diligence sessions can be arranged exclusively through our investment relations representative.</li>
+    <li><strong>Confidentiality Protocol:</strong> Detailed cash flow forecasting, transaction modeling, and Information Memorandums (IM) are strictly managed under verified Non-Disclosure Agreements (NDA).</li>
+    <li><strong>Sovereign Titles:</strong> Complete land registry parameters, municipal zoning codes, and Chanote deeds are maintained within verified corporate directories.</li>
+    <li><strong>Asset Inspections:</strong> Physical asset verification tours and on-site assessments are coordinated exclusively following formal clearance via our transaction partner desk.</li>
   </ul>
 
-  <hr style="border: 0; height: 1px; background: #222; margin: 40px 0;">
+  <hr>
 
-  <!-- 📞 INTERNATIONAL INVESTMENT RELATIONS -->
-  <h2>📞 INTERNATIONAL INVESTMENT RELATIONS</h2>
-  <p style="color: #a0aec0;">For qualified inquiries, project summaries, or to initiate a secure transaction framework, please contact our principal desk:</p>
+  <!-- ==================================================================== 
+       📞 PRIVACY-FIRST COMMUNICATIONS DESK
+       ==================================================================== -->
+  <h2>📞 SECURE COMMUNICATIONS CAPABILITY</h2>
+  <p>For sovereign wealth fund allocators, corporate vice presidents, and direct principal verification, please activate an encrypted line below:</p>
   
-  <p style="font-size: 16px; color: #ffffff; margin-bottom: 25px;">
+  <!-- ข้อความข้อมูลประจำตัวสรุปของคุณ Joe -->
+  <p style="font-size: 16px; color: #ffffff; margin-bottom: 25px; font-family: 'Georgia', serif; text-align: left;">
     <strong>Principal Partner:</strong> Monthon M.<br>
     📱 Mobile / WhatsApp: +6680-657-8387<br>
-    📧 Official Email: <a href="mailto:joecollection.m@gmail.com" style="color: #d4af37; text-decoration: none;">joecollection.m@gmail.com</a><br>
-    💬 Secure Line ID: <span style="color: #d4af37;">@joecollection</span>
+    📧 Official Email: <a href="mailto:joecollection.m@gmail.com" style="color: #dfba73; text-decoration: none;">joecollection.m@gmail.com</a><br>
+    💬 Secure Line ID: <span style="color: #dfba73;">@joecollection</span>
   </p>
 
-  <!-- 🏆 บล็อกปุ่มกดติดต่อสื่อสารประจำแอปพลิเคชันจริง (ฝังลิงก์แอปตรงสำเร็จเสร็จสิ้น) -->
-  <div class="comms-grid">
-    <!-- ปุ่ม WhatsApp (ฝังลิงก์ตรงเบอร์เปิดแอปทักคุยได้ทันที) -->
-    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn-comms btn-whatsapp">
+  <!-- บล็อกช่องทางการติดต่อแบรนด์แบบกลุ่มปุ่ม Monolithic ขอบแชมเปญทองเด่นหรูหรา -->
+  <div class="secure-comms-matrix">
+    <!-- WhatsApp Direct -->
+    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn-secure-comms">
       <span>📞 WhatsApp: +6680-657-8387</span>
     </a>
 
-    <!-- ปุ่ม Gmail (กดเปิดเมลร่างให้อัตโนมัติ) -->
-    <a href="mailto:joecollection.m@gmail.com" class="btn-comms btn-gmail">
+    <!-- Email Direct -->
+    <a href="mailto:joecollection.m@gmail.com" class="btn-secure-comms">
       <span>📧 Email: joecollection.m@gmail.com</span>
     </a>
 
-    <!-- ปุ่ม Line Official (ฝังลิงก์ไอดีแอดทักคุยและมีป้ายชื่อ Secure Line ID Desk ตามที่คุณ Joe กำหนด) -->
-    <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-comms btn-line">
+    <!-- Secure Line ID Desk ดึงกลับมาครบถ้วนตามต้องการ -->
+    <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-secure-comms">
       <span>💬 Secure Line ID Desk: @joecollection</span>
     </a>
   </div>
 
-  <!-- Corporate Copyright footer -->
-  <p style="font-size: 11px; color: #4b5563; text-align: center; margin-top: 60px;">
+  <!-- Corporate Copyright Footer ระดับไอคอนสากลเคร่งขรึม -->
+  <p style="font-size: 11px; color: #374151; text-align: center; margin-top: 60px; letter-spacing: 0.5px;">
     &copy; 2026 Joe Collection. Private Institutional Capital Network. All Corporate Rights Reserved.
   </p>
 
 </body>
 </html>
+
+
+  <hr>
