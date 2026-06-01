@@ -30,26 +30,26 @@
       margin-top: 50px;
       margin-bottom: 20px;
       padding-bottom: 8px;
-      border-bottom: 1px solid rgba(223, 186, 115, 0.2); /* เส้นใต้ทองบางๆ */
+      border-bottom: 1px solid rgba(223, 186, 115, 0.2); 
     }
     
-    p { font-size: 15px; color: #ffffff; margin-bottom: 25px; } /* ตัวหนังสือทั่วไปสีขาว */
+    p { font-size: 15px; color: #ffffff; margin-bottom: 25px; } 
     ul { padding-left: 20px; margin-bottom: 30px; }
-    li { font-size: 15px; color: #ffffff; margin-bottom: 12px; } /* รายการย่อยสีขาว */
-    li strong { color: #dfba73; font-weight: 600; } /* ตัวเน้นสีทอง */
+    li { font-size: 15px; color: #ffffff; margin-bottom: 12px; } 
+    li strong { color: #dfba73; font-weight: 600; } 
     
     hr {
       border: 0;
       height: 1px;
-      background: linear-gradient(to right, rgba(223, 186, 115, 0.3), rgba(223, 186, 115, 0.02)); /* เส้นคั่นไล่เฉดทองแชมเปญ */
+      background: linear-gradient(to right, rgba(223, 186, 115, 0.3), rgba(223, 186, 115, 0.02)); 
       margin: 45px 0;
     }
 
     /* ==================================================================== 
-       2. TRUE INFINITE TICKER (ตัววิ่งเขียวมรกต ไหลลื่นต่อเนื่อง ไม่มีช่องว่างสีขาวคั่น)
+       2. TRUE INFINITE TICKER (ตัววิ่งเขียวมรกต ไหลลื่นต่อเนื่อง ไม่มีช่องว่าง)
        ==================================================================== */
     .ticker-container {
-      background-color: #111823; /* แถบสีมืดตัดกับพื้นเทา */
+      background-color: #111823; 
       border-top: 1px solid rgba(16, 185, 129, 0.4); 
       border-bottom: 1px solid rgba(16, 185, 129, 0.4);
       padding: 14px 0;
@@ -57,14 +57,11 @@
       overflow: hidden;
       display: flex;
     }
-    .ticker-wrapper {
-      display: flex;
-      width: max-content;
-    }
+    .ticker-wrapper { display: flex; width: max-content; }
     .ticker-text {
       font-size: 13px;
       font-weight: 600;
-      color: #10b981; /* สีเขียวมรกตพรีเมียม */
+      color: #10b981; 
       letter-spacing: 2px;
       white-space: nowrap;
       text-transform: uppercase;
@@ -76,7 +73,7 @@
     }
 
     /* ==================================================================== 
-       3. 3D NEOMORPHIC GATEWAYS (ปุ่มกดแบบนูน มีมิติหนาลอยเด่นสะดุดสายตานักลงทุน)
+       3. 3D NEOMORPHIC GATEWAYS (ปุ่มกดแบบนูน มีมิติหนาลอยเด่น)
        ==================================================================== */
     .gateway-matrix {
       display: grid;
@@ -97,30 +94,22 @@
       border-radius: 8px;
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
-    /* ปุ่มโรงแรมหรูนูนมิติเฉดสีแดงเบอร์กันดี */
     .btn-hospitality-prime {
       color: #ffffff;
       background: linear-gradient(135deg, #851c1c, #5c1414);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 15px rgba(133, 28, 28, 0.4), 
-                  inset 0 1px 2px rgba(255, 255, 255, 0.2), 
-                  inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(133, 28, 28, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.3);
     }
     .btn-hospitality-prime:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 25px rgba(133, 28, 28, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.3);
       filter: brightness(1.1);
     }
-
-    /* ปุ่มที่ดินเปล่านูนมิติเฉดเทาโครเมียมพรีเมียม */
     .btn-land-prime {
       color: #ffffff;
-      background: linear-gradient(135deg, #2c374e, #1c2436); /* สีเทาเข้มรมดำมีมิติ */
+      background: linear-gradient(135deg, #2c374e, #1c2436);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 
-                  inset 0 1px 2px rgba(255, 255, 255, 0.15), 
-                  inset 0 -3px 0 rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.15), inset 0 -3px 0 rgba(0, 0, 0, 0.4);
     }
     .btn-land-prime:hover {
       transform: translateY(-4px);
@@ -151,50 +140,36 @@
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .btn-secure-comms:hover {
-      transform: translateY(-3px);
-      filter: brightness(1.15);
-    }
-    .btn-whatsapp {
-      background: linear-gradient(135deg, #16a34a, #15803d); 
-      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2);
-    }
-    .btn-gmail {
-      background: linear-gradient(135deg, #dc2626, #b91c1c); 
-      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2);
-    }
-    .btn-line {
-      background: linear-gradient(135deg, #16a34a, #059669); 
-      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2);
-    }
+    .btn-secure-comms:hover { transform: translateY(-3px); filter: brightness(1.15); }
+    .btn-whatsapp { background: linear-gradient(135deg, #16a34a, #15803d); box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2); }
+    .btn-gmail { background: linear-gradient(135deg, #dc2626, #b91c1c); box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2); }
+    .btn-line { background: linear-gradient(135deg, #16a34a, #059669); box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3), inset 0 1px 1px rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0,0,0,0.2); }
     .btn-secure-comms svg { width: 16px; height: 16px; fill: currentColor; }
   </style>
 </head>
 <body>
 
-    <!-- ==================================================================== 
-       TRUE INFINITE TICKER COMPONENT (ระบบตัววิ่งสีเขียวมรกตสดใส วิ่งต่อเนื่อง 100%)
-       ==================================================================== -->
+  <!-- ระบบตัววิ่งสีเขียวมรกตสดใส วิ่งต่อเนื่อง 100% -->
   <div class="ticker-container">
     <div class="ticker-wrapper">
-      <span class="ticker-text">
-        ✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;
-      </span>
-      <span class="ticker-text">
-        ✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;
-      </span>
+      <span class="ticker-text">✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;</span>
+      <span class="ticker-text">✨ PRIVATE INSTITUTIONAL PORTFOLIO • OFF-MARKET CAPITAL DIVESTMENTS • STRATEGIC ACQUISITIONS AVAILABLE EXCLUSIVELY UPON NDA VERIFICATION ✨ &nbsp;</span>
     </div>
   </div>
 
-  <!-- ==================================================================== 
-       ULTRA-MODERN BRANDING HEADER
-       ==================================================================== -->
-  <div style="text-align: center; margin-bottom: 60px;">
-    <span style="font-size: 38px; font-weight: 300; letter-spacing: 10px; text-transform: uppercase; display: block; margin-bottom: 5px; font-family: -apple-system, BlinkMacSystemFont, sans-serif; color: #ffffff;">
+  <!-- 🎯 ส่วนหัวเว็บที่ปรับดีไซน์ Timeless Luxury ตามที่คุณ Joe ส่งมาเป๊ะๆ ครับ -->
+  <!-- LUXURY BRANDING HEADER BY JOE COLLECTION -->
+  <div style="text-align: center; margin-top: 20px; margin-bottom: 50px;">
+    
+    <!-- 1. ชื่อแบรนด์สไตล์ Timeless Luxury -->
+    <span style="font-family: 'Times New Roman', 'Georgia', serif; font-size: 38px; font-weight: 300; color: #ffffff; letter-spacing: 7px; text-transform: uppercase; display: block; margin-bottom: 5px;">
       JOE COLLECTION
     </span>
-    <div style="width: 40px; height: 1px; background: #dfba73; margin: 20px auto;"></div>
-    <h1 style="font-size: 24px; font-weight: 400; color: #dfba73; letter-spacing: 4px; text-transform: uppercase; margin-top: 12px; margin-bottom: 0;">
+    
+    <!-- เส้นคั่นทองเหลืองสไตล์โรงแรม 5 ดาว -->
+    <div style="width: 60px; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent); margin: 15px auto;"></div>
+
+        <h1 style="font-size: 24px; font-weight: 400; color: #dfba73; letter-spacing: 4px; text-transform: uppercase; margin-top: 12px; margin-bottom: 0;">
       GLOBAL ASSET PORTFOLIO
     </h1>
     <p style="font-size: 14px; color: #ffffff; font-style: italic; letter-spacing: 0.5px; margin-top: 12px; opacity: 0.8;">
@@ -205,13 +180,13 @@
   <hr>
 
   <!-- ==================================================================== 
-       🏛️ PRIVATELY CURATED PORTFOLIOS (ปุ่มกดแบบนูน 3D สดใสมีมิติ)
+       🏛️ PRIVATELY CURATED PORTFOLIOS (ปุ่มกดแบบนูน 3D มีมิติสไตล์ชั้นสูง)
        ==================================================================== -->
   <h2>🏛️ Private Asset Gateways</h2>
   <p>Select a secured asset node below to review engineering parameters, financial metrics, and legal due diligence structures.</p>
 
   <div class="gateway-matrix">
-    <!-- ปุ่มโรงแรมหรูกดนูนมิติเฉดสีแดงเบอร์กันดีสดใส (Burgundy Vibrant 3D) -->
+    <!-- ปุ่มโรงแรมหรูกดนูนมิติเฉดสีแดงเบอร์กันดี (Burgundy Vibrant 3D) -->
     <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-gateway btn-hospitality-prime">
       <span>Hospitality Portfolio (Pattaya Hotels)</span>
       <span>&#10230;</span>
@@ -245,7 +220,7 @@
   <h2>📞 SECURE COMMUNICATIONS CAPABILITY</h2>
   <p>For sovereign wealth fund allocators, corporate vice presidents, and direct principal verification, please activate an encrypted line below:</p>
   
-  <!-- ข้อความข้อมูลประจำตัวสรุปของคุณ Joe สีขาวคมชัดตามที่คุณ Joe เลือกอ่านง่ายคมชัดบนพื้นเทา -->
+  <!-- ข้อความข้อมูลประจำตัวสรุปของคุณ Joe แบบดั้งเดิม คมชัดบนพื้นเทา -->
   <p style="font-size: 16px; color: #ffffff; margin-bottom: 25px; text-align: left;">
     <strong>Principal Partner:</strong> Monthon M.<br>
     📱 Mobile / WhatsApp: +6680-657-8387<br>
@@ -269,7 +244,7 @@
 
     <!-- Secure Line ID Desk (ปุ่มนูนเฉดสีเขียว Line Official สดใส) -->
     <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-secure-comms btn-line">
-      <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor; margin-right:4px;"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224-.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187s.023-.01.023-.01zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
+      <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor; margin-right:4px;"><path d="M24 10.304c0-5.232-5.383-9.486-12-9.486-6.617 0-12 4.254-12 9.486 0 4.691 4.27 8.612 10.034 9.358.391.084.922.258 1.058.591.12.295.079.757.039 1.055l-.173 1.036c-.052.316-.254 1.238 1.096.675 1.349-.563 7.279-4.288 9.932-7.339 2.015-2.223 2.014-4.144 2.014-5.411zm-15.65 2.122h-1.688c-.276 0-.5-.224-.5-.5v-3.344c0-.276.224-.5 ambush.5-.5s.5.224.5.5v2.844h1.188c.276 0 .5.224.5.5s-.224-.5-.5.5zm2.188-.5c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-3.344c0-.276.224-.5-.5s.5.224.5.5v3.344zm4.825 0c0 .227-.152.426-.374.484l-1.688.438c-.042.011-.085.016-.127.016-.221 0-.413-.146-.475-.365l-.844-3c-.06-.214.043-.443.243-.521.201-.077.433.014.516.216l.635 2.259 1.15-.298c.268-.07.544.093.614.362.015.061.022.124.022.187s.023-.01.023-.01zm2.187-1.156h-1.188v-.5h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.188v-.438h1.188c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-1.688c-.276 0-.5.224-.5.5v3.344c0 .276.224.5.5.5h1.688c.276 0 .5-.224.5-.5s-.224-.5-.5-.5z"/></svg>
       <span>Secure Line ID Desk</span>
     </a>
   </div>
