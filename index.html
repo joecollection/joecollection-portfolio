@@ -6,7 +6,6 @@
   <title>Joe Collection — Private Institutional Capital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-
   <style>
     /* ================================================================
        DESIGN SYSTEM — SOVEREIGN BLACK GOLD  (Mobile-First v3)
@@ -52,7 +51,6 @@
       letter-spacing: 0.02em;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
-      /* prevent content from ever exceeding screen */
       width: 100%;
       max-width: 100vw;
     }
@@ -184,12 +182,13 @@
       animation: fade-up 1s var(--ease-luxury) 0.2s forwards;
     }
     .hero-eyebrow {
-      font-size: clamp(7.5px, 1.8vw, 9px);
+      font-size: clamp(8px, 1.8vw, 10px);
       font-weight: 700;
       letter-spacing: clamp(3.5px, 1.2vw, 5.5px);
       text-transform: uppercase;
       color: var(--gold-mid);
       margin-bottom: 18px;
+      line-height: 1.6;
     }
     /* "JOE" — top word, large, white */
     .hero-wordmark {
@@ -240,7 +239,6 @@
       display: flex;
       align-items: center;
       gap: 7px;
-      /* match card bg so hairline appears cut */
       background: linear-gradient(160deg, #1a1f2e 0%, #0f1119 100%);
       padding: 0 16px;
     }
@@ -286,37 +284,40 @@
     }
     .hero-subtitle {
       font-family: var(--font-accent);
-      font-size: clamp(13px, 3.2vw, 16px);
+      font-size: clamp(14px, 3.5vw, 17px);
       font-style: italic;
       color: var(--ivory-dim);
       letter-spacing: 0.4px;
       padding: 0 4px;
       margin-bottom: clamp(26px, 5vw, 36px);
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
-    /* ── CTA BUTTONS — equal size, red primary, dark secondary ── */
+    /* ── CTA BUTTONS — IDENTICAL SIZE & STACKED ─────────────── */
     .hero-cta-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
+      flex-direction: column; /* เรียงปุ่มแนวตั้งแบบในรูป */
+      align-items: center;
+      gap: 16px;
       justify-content: center;
+      width: 100%;
     }
     .btn-hero-cta {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      /* identical padding & min-width = equal visual size */
-      padding: clamp(14px, 3.2vw, 18px) clamp(26px, 5.5vw, 38px);
-      min-width: clamp(180px, 38vw, 220px);
+      gap: 12px;
+      width: 100%;
+      max-width: 340px; /* ล็อคความกว้างให้เท่ากันเป๊ะ */
+      height: 60px;     /* ล็อคความสูงให้เท่ากันเป๊ะ */
+      padding: 0 20px;
       font-family: var(--font-body);
-      font-size: clamp(9.5px, 2vw, 11px);
+      font-size: clamp(10px, 2.5vw, 11px);
       font-weight: 700;
       letter-spacing: clamp(2px, 0.8vw, 3px);
       text-transform: uppercase;
       text-decoration: none;
-      border-radius: 3px;
+      border-radius: 4px;
       cursor: pointer;
       transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury), filter 0.3s;
       white-space: nowrap;
@@ -324,7 +325,7 @@
     .btn-hero-cta:hover  { transform: translateY(-4px); filter: brightness(1.1); }
     .btn-hero-cta:active { transform: translateY(-1px); }
 
-    /* Primary — burgundy red embossed (matches hospitality palette) */
+    /* Primary — burgundy red embossed */
     .btn-hero-primary {
       color: #ffd8d8;
       background: linear-gradient(140deg, #851c1c 0%, #5c1414 55%, #3d0a0a 100%);
@@ -345,7 +346,7 @@
         inset 0 1px 0 rgba(255,200,200,0.25);
     }
 
-    /* Secondary — obsidian plate with gold border (embossed) */
+    /* Secondary — obsidian plate with gold border */
     .btn-hero-secondary {
       color: var(--gold-hi);
       background: linear-gradient(140deg, #21273a 0%, #141824 100%);
@@ -366,7 +367,14 @@
         inset 0 1px 0 rgba(255,255,255,0.1),
         0 0 0 1px var(--gold-mid);
     }
-    .btn-hero-cta svg { width: 13px; height: 13px; fill: currentColor; flex-shrink: 0; }
+    
+    /* ควบคุมไอคอนในปุ่ม */
+    .btn-hero-cta svg {
+      width: 15px; 
+      height: 15px; 
+      flex-shrink: 0; 
+      margin-bottom: 2px;
+    }
 
     @keyframes fade-up {
       from { opacity: 0; transform: translateY(18px); }
@@ -379,7 +387,6 @@
       align-items: center;
       gap: 16px;
       margin: clamp(40px, 8vw, 64px) 0 clamp(28px, 5vw, 44px);
-      /* allow text to shrink if needed */
       flex-wrap: nowrap;
       overflow: hidden;
     }
@@ -420,7 +427,6 @@
     /* ── GATEWAY BUTTONS ─────────────────────────────────────── */
     .gateway-grid {
       display: grid;
-      /* 2 cols on tablet+, 1 col on mobile */
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
       gap: 16px;
     }
@@ -429,13 +435,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      /* generous tap target height */
       padding: clamp(20px, 5vw, 28px) clamp(20px, 5vw, 30px);
       text-decoration: none;
       border-radius: 4px;
       overflow: hidden;
       transition: transform 0.4s var(--ease-luxury), box-shadow 0.4s var(--ease-luxury);
-      /* ensure text doesn't overflow */
       min-height: 76px;
     }
     .btn-gateway::before {
@@ -455,7 +459,6 @@
       gap: 5px;
       position: relative;
       z-index: 1;
-      /* don't let label squeeze the arrow off-screen */
       flex: 1;
       min-width: 0;
     }
@@ -465,7 +468,6 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       opacity: 0.7;
-      /* truncate only on extreme sizes */
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -514,7 +516,6 @@
     /* ── PROTOCOL CARDS ──────────────────────────────────────── */
     .protocol-grid {
       display: grid;
-      /* 3 cols on desktop, 1 col on mobile */
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
       gap: 14px;
     }
@@ -572,7 +573,6 @@
     }
     .contact-name {
       font-family: var(--font-display);
-      /* Long Thai name — scale down on small screens */
       font-size: clamp(20px, 5.5vw, 30px);
       font-weight: 400;
       color: var(--white);
@@ -592,7 +592,6 @@
       gap: 12px;
       font-size: clamp(12.5px, 3.2vw, 14px);
       color: var(--ivory-dim);
-      /* wrap long email on small screens */
       word-break: break-all;
     }
     .contact-line-icon {
@@ -614,7 +613,6 @@
     /* ── COMM BUTTONS ────────────────────────────────────────── */
     .comms-grid {
       display: grid;
-      /* 3 cols on desktop, 1 col on mobile */
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
       gap: 12px;
     }
@@ -623,7 +621,6 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      /* tall enough to tap comfortably */
       padding: clamp(15px, 4vw, 18px) 16px;
       font-family: var(--font-body);
       font-size: clamp(10px, 2.5vw, 11.5px);
@@ -686,7 +683,6 @@
       letter-spacing: 1.2px;
       color: var(--ivory-ghost);
       text-transform: uppercase;
-      /* prevent overflow on narrow screens */
       word-break: break-word;
       padding: 0 4px;
     }
@@ -723,10 +719,10 @@
 
     <!-- HERO — 3D EMBOSSED PREMIUM CARD -->
     <header class="hero">
-
+      
       <!-- TOP: eyebrow + JOE -->
       <div class="hero-top">
-        <p class="hero-eyebrow">Private Institutional Capital Desk</p>
+        <p class="hero-eyebrow">Hospitality Portfolio — Pattaya,<br>Thailand</p>
         <h1 class="hero-wordmark">Joe</h1>
       </div>
 
@@ -744,15 +740,22 @@
 
       <!-- BOTTOM: subtitle + CTA buttons -->
       <div class="hero-bottom">
-        <p class="hero-subtitle">A Private Investment Hub for Institutional Funds &amp; Family Offices Globally</p>
+        <p class="hero-subtitle">Curated Portfolio of Ultra-Luxury Hospitality &amp;<br>Premium Real Estate — Pattaya</p>
+        
         <div class="hero-cta-row">
           <a href="https://joecollection.github.io/pattaya-hotel-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-hero-cta btn-hero-primary">
-            <svg viewBox="0 0 24 24"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 21V12h6v9" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-            Hospitality Portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Garden Cliff Resort
           </a>
           <a href="https://joecollection.github.io/prime-land-for-sale/" target="_blank" rel="noopener noreferrer" class="btn-hero-cta btn-hero-secondary">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-            Land Portfolio
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Mountain Beach Resort
           </a>
         </div>
       </div>
@@ -881,6 +884,5 @@
     }, { threshold: 0.1 });
     reveals.forEach(el => io.observe(el));
   </script>
-
 </body>
 </html>
